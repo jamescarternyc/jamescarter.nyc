@@ -1,0 +1,127 @@
+<!Doctype html>
+<html lang = "en">
+	<head>
+		<title>James Carter</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/formstone-css/navigation.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<link href="css/formstone-css/navigation.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<script src="https://use.typekit.net/xil7clq.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	</head>
+	<body>
+<!--				<img class = "logo center-block"src = "img/JaycTest.png">-->
+		<h4 id="handle"></h4>
+				<nav class = "mobile-navigation " data-navigation-handle="#handle" data-navigation-content="#content">
+					<ul class = "nav navbar-nav nav-pills">
+						<a href = "/#projects"><li>work</li></a>
+						<a href = "#"><li>about</li></a>
+						<a id ="contact-mobile" href = "#"><li>contact</li></a>
+					</ul>
+				</nav>
+		<div id = "content" class = "container">
+			<header>
+				<nav>
+				<ul class = "nav nav-pills pull-right">
+						<li><a href = "/#projects">work</a></li>
+						<li class ="active"><a href = "#">about</a></li>
+						<li><a id ="contact" href = "#">contact</a></li>
+					</ul>
+			</nav>
+					
+				<div class = "profile">
+					<a href ="#">
+					<div class = "avatar">
+						<div class="avi"></div>
+					</div>
+					</a>
+						
+				
+				<ul class = "profile-info">
+					<li><a class = "name" href = "/">James Carter</a></li>
+					<li><a class = "email" href = "mailto:hello@jamescarter.nyc" target="_blank">hello@jamescarter.nyc</a></li>
+				</ul>	
+					<div class = "social-icon">
+						<a href ="https://instagram.com/jamescarternyc" target="_blank">
+							<i class="fa fa-instagram">
+							</i>
+					</a>
+					<a href ="https://twitter.com/jamecarternyc" target="_blank">
+						<i class="fa fa-twitter">
+						</i>
+					</a>
+					<a href ="https://linkedin.com/in/jamescarternyc" target="_blank">
+								<i class="fa fa-linkedin">
+								</i>				
+							</a>
+							<a href ="https://github.com/jamescarternyc" target="_blank">
+								<i class="fa fa-github">
+								</i>				
+							</a>	
+					</div>
+				</div>
+					</header>
+				<!--End of header-->
+
+					<div class = "about-container">
+						<img id = "bomber" class = "picture" data-toggle = "tooltip" title = "Bomber Jacket- Stylish, Simple, & Functional."src ="img/bomber.png">
+						<img id = "notebook" class = "picture" data-toggle="tooltip" title = "Graph Ruled Composition Notebook- Where it all starts." src ="img/notebook.png">
+						<img id = "nas" class = "picture" data-toggle="tooltip" title = "Illmatic by Nas" src ="img/nas.png">
+						
+					<div class = "row">
+						<img id = "nasa" class = "picture" data-toggle="tooltip" title = "Space Enthusiast. Aliens exist." data-placement ="right" src ="img/nasaLogo-570x450.png">
+						<img id = "laptop" class = "picture" data-toggle = "tooltip" title ='13" Macbook Pro - Where it all finishes.' src ="img/laptop.png">
+					</div>
+					<div class = "row">
+						<img id = "wmcj" class = "picture" data-toggle = "tooltip" title = "White Men Can't Jump- Encompasses everything I love: Basketball, Comedy, the 90's, & Jeopardy." src ="img/wmcj.png" data-placement = "top">
+						<img id = "shoe" class = "picture" data-toggle = "tooltip" title = "McNairy Mocassins"src ="img/shoe.png">
+						<img id = "graduation" class = "picture" data-toggle="tooltip" title = "Graduation by Kanye West." src ="img/graduation.png">
+						<img id = "book" class = "picture" data-toggle="tooltip" title = "Next Read- The Unwinding by George Packer." src ="img/theunwinding.jpg">
+						<img id = "iphone" class = "picture" data-toggle = "tooltip" title ="iPhone 6." src ="img/iphone6.png">
+
+					</div>		
+					</div>					
+			<div class = "row col-sm-12">
+					<p class = "insetshadow about">
+					I'm 22 years young &amp; originally from <span> Mt. Vernon</span>, New York. I decided against a bio. Instead, I picked 10 essentials that help illustrate who James Carter is.
+					</p>
+			</div>
+					
+			</div>
+
+		</div>
+				<!--End of container-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script src="js/formstone/core.js"></script>
+		<script src="js/formstone/mediaquery.js"></script>
+		<script src="js/formstone/swap.js"></script>
+		<script src="js/formstone/navigation.js"></script>
+		<script>
+			$(function () {
+  			$('[data-toggle="tooltip"]').tooltip()
+			})
+			
+		$("#contact, #contact-mobile").click(function(){
+				$(".avi").css("background-image", "url('/img/drake.gif')");
+				$(".profile-info, .social-icon").addClass("boat");
+		});
+		$(".avi").click(function(){
+			$(".avi").css("background-image", "url('/img/aviBOY.jpg')");
+			$(".profile-info, .social-icon").removeClass("boat");
+		});	
+		</script>
+	
+	<script>
+			$("nav").navigation({
+				gravity: "right",
+				type: "push",
+				maxWidth:"768px",
+				label: false
+			});
+		</script>
+		
+	</body>
+</html>
